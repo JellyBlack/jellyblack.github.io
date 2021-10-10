@@ -1,0 +1,56 @@
+name: blog-auto-build
+on:
+  push:
+    branches:
+    - main
+  delete:
+
+jobs:
+  main-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:                          
+    - name: checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: main
+            
+    - name: install nodejs
+      uses: actions/setup-node@v1
+      
+    - name: configue Hexo
+      run: |
+        npm install -g hexo-cli
+        npm install
+                
+    - name: generate static files
+      run: |
+        hexo generate --silent
+        cp -r source/live2d-widget public/live2d-widget
+                
+    - name: push static files to branch gh-pages 
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+        REF: github.com/${{github.repository}}
+        MYEMAIL: jellyblack4553@gmail.com
+        MYNAME: ${{github.repository_owner}}          
+      run: |
+        cd public
+        git config --global user.email "${MYEMAIL}"
+        git config --global user.name "${MYNAME}"
+        git init
+        git remote add origin https://${REF}
+        git add . 
+        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+        git branch -M main
+        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
+        
+    - name: 'checkout'
+      uses: actions/checkout@v1
+        
+    - name: 'mirror to gitee'
+      uses: pixta-dev/repository-mirroring-action@v1
+      with:
+        target_repo_url:
+          git@gitee.com:jellyblack/jellyblack.git
+        ssh_private_key:
+          ${{ secrets.SSH_GITEE }}
