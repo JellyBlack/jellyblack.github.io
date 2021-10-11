@@ -88,11 +88,12 @@ function loadWidget(config) {
 				document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
 			}, 3000);
 		});
-		$(document).keydown((event) => {
-			if(event.keyCode == 123){
+		document.onkeydown = function(event){
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode == 123){
 				showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
 			}
-		});
+		}
 		window.addEventListener("copy", () => {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
