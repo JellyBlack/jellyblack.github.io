@@ -43,9 +43,9 @@
     </ul>
     <ul>
       <li>
-        <!-- cnzz统计 -->
+        <!-- cnzz统计，隐藏图标 -->
         <% if (theme.cnzz&&theme.cnzz.enable){ %>
-        <script type="hidden" src='<%= theme.cnzz.url%>'></script>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_<%= theme.cnzz.id %>'%3E%3C/span%3E%3Cscript src='<%= theme.cnzz.url %>' type='text/javascript'%3E%3C/script%3E"));document.getElementById("cnzz_stat_icon_<%= theme.cnzz.id %>").style.display = "none";</script>
         <% } %>
       </li>
     </ul>
