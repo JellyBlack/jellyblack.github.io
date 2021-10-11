@@ -81,28 +81,28 @@
 		"selector": "#todark",
 		"text": ["点它可以切换到夜间模式哦", "深夜要注意用眼哦", "deep♂dark♂fantacy"]
 	}, {
-		"selector": ".share-sns",
+		"selector": "span.share-sns",
 		"text": ["好东西要让更多人知道才行哦。", "觉得文章有帮助的话，可以分享给更多需要的朋友呢。"]
 	}, {
-		"selector": ".weibo",
+		"selector": "a.weibo",
 		"text": ["微博？来分享一波喵！"]
 	}, {
-		"selector": ".weixin",
+		"selector": "a.weixin",
 		"text": ["分享到微信吧！"]
 	}, {
-		"selector": ".qq",
+		"selector": "a.qq",
 		"text": ["让更多QQ好友看到吧！"]
 	}, {
-		"selector": ".douban",
+		"selector": "a.douban",
 		"text": ["分享到豆瓣好像也不错！"]
 	}, {
-		"selector": ".facebook",
+		"selector": "a.facebook",
 		"text": ["FB好像是不存在的东西？"]
 	}, {
-		"selector": ".twitter",
+		"selector": "a.twitter",
 		"text": ["emmm…Twitter？好像也是不存在的东西？"]
 	}, {
-		"selector": ".google",
+		"selector": "a.google",
 		"text": ["好像需要魔法才能分享到Google哦"]
 	}, {
 		"selector": ".article-nav-link",
