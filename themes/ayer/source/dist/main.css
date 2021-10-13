@@ -704,7 +704,7 @@ button {
 
 .cover-inner {
 	position: absolute;
-	top: 50%;
+	top: 44%;
 	left: 50%;
 	transform: translate(-50%,-100%)
 }
@@ -729,10 +729,16 @@ button {
 }
 
 #title {
-	color: #fb7299
+	color: #fb7299;
+	text-shadow: 3px 3px 4px #00000070
+}
+
+#subtitle-box {
+	height: 0
 }
 
 .typed-cursor {
+	position: absolute;
 	color: #3a3a3a
 }
 
