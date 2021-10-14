@@ -62,6 +62,10 @@ top: True
 
 此处特别感谢[live2d-widget](https://github.com/stevenjoezhang/live2d-widget)提供支持。
 
+## 设置&关于
+
+在“**关于**”页面可以看到当前站点信息，并可以调整浏览设置。可以调整评论、看板娘、置顶文章、轮播文字、悬浮按钮的显示状态。
+
 # 高级
 
 以下内容供高级用户使用。

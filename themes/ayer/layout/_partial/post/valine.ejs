@@ -21,6 +21,9 @@
       item.parentNode.removeChild(item);
     });
   }
+  if(localStorage.hide_comments == 1){
+    $("#vcomments-box").hide();
+  }
 </script>
 <style>
   #vcomments-box {

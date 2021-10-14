@@ -30,6 +30,7 @@
       />
       <title><% if (title){ %><%= title %> | <% } %> <%= config.title %></title>
       <% if (theme.favicon){ %>
+	  <%- js('/js/jquery-3.6.0.min') %> 
       <link rel="shortcut icon" href="<%- theme.favicon %>" />
       <% } %> <%- css('dist/main') %>
       <link

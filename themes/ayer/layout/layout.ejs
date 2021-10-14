@@ -25,6 +25,11 @@
     <div class="float_btns">
       <%- partial('_partial/float-btns') %>
     </div>
+	<script>
+		if(localStorage.show_btns == 0){
+			document.getElementsByClassName("float_btns")[0].setAttribute("style", "display: none;");
+		}
+	</script>
     <aside class="sidebar on">
       <%- partial('_partial/sidebar') %>
     </aside>
