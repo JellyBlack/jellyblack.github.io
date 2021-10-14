@@ -21,6 +21,7 @@ tag: Tag
 site_visitors: 访问人数
 page_views: 浏览次数
 friends: 友情链接
+search_placeholder: 告诉爱酱你要搜索的内容吧
 
 post:
   word_count: 字数统计

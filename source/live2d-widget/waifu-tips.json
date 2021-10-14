@@ -27,22 +27,22 @@
 		"selector": ".nav-item>a[href='/']",
 		"text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦。", "点它就可以回到首页啦！", "回首页看看吧。"]
 	}, {
-		"selector": ".nav-item>a[href='/archives']",
+		"selector": ".nav-item>a[href='/archives/']",
 		"text": ["想看看博客的时间轴吗", "时…就是时间轴啦！", "这里记录了所有博客哦"]
 	}, {
-		"selector": ".nav-item>a[href='/categories']",
+		"selector": ".nav-item>a[href='/categories/']",
 		"text": ["文章都分类好啦～", "点击来查看文章分类哦。"]
 	}, {
-		"selector": ".nav-item>a[href='/tags']",
+		"selector": ".nav-item>a[href='/tags/']",
 		"text": ["点击就可以看文章的标签啦！", "点击来查看所有标签哦。"]
 	}, {
-		"selector": ".nav-item>a[href='/indexes/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0']",
+		"selector": ".nav-item>a[href='/indexes/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/']",
 		"text": ["主人精心制作的课程笔记哟～", "温故而知新", "无偿分享，随意使用哦", "拿走吧，不用谢φ(>ω<*) "]
 	}, {
-		"selector": ".nav-item>a[href='/categories/%E5%BD%B1%E9%9B%86']",
+		"selector": ".nav-item>a[href='/categories/%E5%BD%B1%E9%9B%86/']",
 		"text": ["这是主人的相册哦", "没有本人照片的ヽ(￣▽￣)ﾉ", "摄影技术不好，见谅~"]
 	}, {
-		"selector": ".nav-item>a[href='/about']",
+		"selector": ".nav-item>a[href='/about/']",
 		"text": ["你想知道我家主人是谁吗？", "这里有一些关于我家主人的秘密哦，要不要看看呢？", "发现主人出没地点！"]
 	}, {
 		"selector": ".nav-item-search",
@@ -63,13 +63,13 @@
 		"selector": ".btn-copy",
 		"text": ["代码可以直接点击复制哟。"]
 	}, {
-		"selector": "a[href^='/tags']",
+		"selector": "a[href^='/tags/']",
 		"text": ["要去看看 <span>{text}</span> 标签么？", "点它可以查看此标签下的所有文章哟！"]
 	}, {
-		"selector": "a[href^='/categories']",
+		"selector": "a[href^='/categories/']",
 		"text": ["要去看看 <span>{text}</span> 分类么？", "点它可以查看此分类下的所有文章哟！"]
 	}, {
-		"selector": ".article-title,.archive-article-title",
+		"selector": ".article-title,.archive-article-title,.search-result-title",
 		"text": ["要看看 <span>{text}</span> 这篇文章吗？"]
 	}, {
 		"selector": ".article-more-link",

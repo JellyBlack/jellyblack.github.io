@@ -21,6 +21,7 @@ tag: Tag
 site_visitors: Visitors
 page_views: Views
 friends: Friends
+search_placeholder: Tell Aichan what you are looking for
 
 post:
   word_count: Word count
