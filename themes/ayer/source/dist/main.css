@@ -465,7 +465,8 @@ button {
 	bottom: 0;
 	width: 8rem;
 	height: 100%;
-	background-color: rgba(0,0,0,.8)
+	background-color: rgba(0,0,0,.8);
+	box-shadow: 1px 0px 20px 0px rgb(0 0 0 / 20%);
 }
 
 .sidebar.on {
@@ -482,6 +483,7 @@ button {
 	border-radius: 50%;
 	background-color: rgba(0,0,0,.5);
 	color: #fff;
+	box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 40%);
 	transition: all .3s ease-in-out;
 	opacity: .5
 }
@@ -1574,6 +1576,10 @@ a.toc-link {
 	text-decoration: none
 }
 
+.article-more-link {
+	box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 20%);
+}
+
 .articles .article-entry .article-gallery {
 	margin-top: 1.5rem
 }
@@ -2617,7 +2623,8 @@ pre .css~* .id,pre .id {
 	width: 3.2rem;
 	height: 3.2rem;
 	border-radius: 3.2rem;
-	background-color: #efefef;
+	background-color: #fff;
+	box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%), inset 0px -1px 0px 0px rgb(0 0 0 / 10%);
 	line-height: 3rem;
 	opacity: .6;
 	transition: opacity 1s ease
