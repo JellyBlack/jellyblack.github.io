@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="footer" class="footer">
   <div class="outer">
     <ul>
       <li id="copyright">
@@ -51,3 +51,8 @@
     </ul>
   </div>
 </footer>
+<script>
+	if(sessionStorage.hide_copyright == 1){
+		document.getElementById("footer").setAttribute("style", "display: none;");
+	}
+</script>

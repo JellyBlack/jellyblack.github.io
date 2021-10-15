@@ -61,6 +61,12 @@
       <% if (!index && theme.share_enable){ %> <%- partial('post/share') %> <% }
       %> <%- partial('post/tag') %>
     </footer>
+	<script>
+	 if(sessionStorage.hide_copyright == 1){
+	  document.getElementsByClassName("declare")[0].setAttribute("style", "display: none;");
+	  document.getElementsByClassName("article-footer")[0].setAttribute("style", "display: none;");
+	 }
+	</script>
   </div>
 
   <% if (!index){ %> <%- partial('post/nav') %> <% } %> <% if (theme.valine &&

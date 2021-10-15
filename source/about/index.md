@@ -18,6 +18,7 @@ date: 2021-10-10 18:36:51
 <p><input id="checkbox_hide_comments" class="checkbox" name="hide_comments" type="checkbox" /><label class="label" for="checkbox_hide_comments">隐藏Valine评论</label></p>
 <p><input id="checkbox_hide_live2d" class="checkbox" name="hide_live2d" type="checkbox" /><label class="label" for="checkbox_hide_live2d">始终隐藏Live2D看板娘</label><button id="button_reload_live2d" class="button">重新加载</button></p>
 <p><input id="checkbox_hide_welcome" class="checkbox" name="hide_welcome" type="checkbox" /><label class="label" for="checkbox_hide_welcome">在首页隐藏文章《欢迎来到Jelly的小窝~》</label></p>
+<p><input id="checkbox_hide_copyright" class="checkbox" name="hide_copyright" type="checkbox" /><label class="label" for="checkbox_hide_copyright">临时隐藏版权声明和分享按钮</label></p>
 <p><input id="checkbox_show_subtitle" class="checkbox" name="show_subtitle" type="checkbox" /><label class="label" for="checkbox_show_subtitle">显示主页轮播文字</label></p>
 <p><input id="checkbox_show_btns" class="checkbox" name="show_btns" type="checkbox" /><label class="label" for="checkbox_show_btns">显示悬浮按钮</label></p>
 <style>
@@ -32,7 +33,7 @@ date: 2021-10-10 18:36:51
 }
 .label {
 	position: relative;
-	bottom: 0.2em
+	bottom: 0.25em
 }
 .button {
 	position: relative;
@@ -40,6 +41,7 @@ date: 2021-10-10 18:36:51
 	margin-left: 0.5em
 }
 </style>
+
 
 
 
@@ -90,7 +92,7 @@ if(/^\/about/.test(window.location.pathname)){
 					$("#commit_info").html("上次提交时间：" + formatDate(new Date(date)) + " <a id='commit_info_href' href='javascript:show_detail()'>查看详情</a>");
 					show_detail = function(){
 						$('#commit_info_href').hide();
-						$('#commit_info').append('<br>提交者：<a href="mailto://' + data.commit.committer.email + '">' + data.committer.name + '</a><br>SHA：<a href="' + data.html_url + '">' + data.sha + '</a><br>#提交信息#<br>' + data.commit.message.replace(/\\n+/g, "<br>"));
+						$('#commit_info').append('<br>提交者：<a href="mailto://' + data.commit.committer.email + '">' + data.commit.committer.name + '</a><br>SHA：<a href="' + data.html_url + '">' + data.sha + '</a><br>#提交信息#<br>' + data.commit.message.replace(/\\n+/g, "<br>"));
 					}
 				}
 				catch(e){
@@ -136,6 +138,9 @@ if(localStorage.hide_live2d == 1){
 }
 if(localStorage.hide_welcome == 1){
 	$("#checkbox_hide_welcome").prop("checked", true);
+}
+if(sessionStorage.hide_copyright == 1){
+	$("#checkbox_hide_copyright").prop("checked", true);
 }
 if(localStorage.show_subtitle != 0){
 	$("#checkbox_show_subtitle").prop("checked", true);
@@ -203,6 +208,35 @@ $("#checkbox_hide_welcome").click(function(){
 	}
 	else{
 		localStorage.setItem("hide_welcome", 0);
+	}
+});
+$("#checkbox_hide_copyright").click(function(){
+	if($("#checkbox_hide_copyright").is(":checked")){
+        if(sessionStorage.hide_copyright_confirmed == 1){
+            sessionStorage.setItem("hide_copyright", 1);
+            $(".declare").hide();
+            $(".article-footer").hide();
+            $("#footer").hide();
+        }
+        else{
+            var flag = confirm("确定隐藏版权信息吗？该功能仅供网页截图等，站长始终保留版权。仅本次浏览有效。");
+            if(flag){
+                sessionStorage.setItem("hide_copyright_confirmed", 1);
+                sessionStorage.setItem("hide_copyright", 1);
+                $(".declare").hide();
+                $(".article-footer").hide();
+                $("#footer").hide();
+            }
+            else{
+                $("#checkbox_hide_copyright").prop("checked", false);
+            }
+        }
+	}
+	else{
+		sessionStorage.setItem("hide_copyright", 0);
+        $(".declare").show();
+        $(".article-footer").show();
+        $("#footer").show();
 	}
 });
 $("#checkbox_show_subtitle").click(function(){
