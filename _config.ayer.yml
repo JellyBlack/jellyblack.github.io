@@ -83,9 +83,9 @@ reward_type: 0
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
-alipay: 
+alipay:
 # 微信二维码图片地址
-weixin: 
+weixin:
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
@@ -97,7 +97,7 @@ search: true
 
 # RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
 # 不想显示可以直接留空
-rss: 
+rss:
 
 # 是否启用黑夜模式开关
 darkmode: true
@@ -108,7 +108,7 @@ canvas_bg: 0
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
   enable: false
-  path: ''
+  path: ""
 
 # 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
 click_effect: 3
@@ -143,9 +143,9 @@ cnzz:
   id: 1280180245
 
 # Google Analytics
-google_analytics: 
+google_analytics:
 # 百度统计
-baidu_analytics: 
+baidu_analytics:
 
 # Mathjax数学公式
 mathjax: false
@@ -169,14 +169,14 @@ since: 2021
 # ICP备案信息尾部显示
 icp:
   enable: false
-  url:  # 备案链接
-  text:  # 备案信息
+  url: # 备案链接
+  text: # 备案信息
 # 公安备案信息尾部显示
 gongan:
   enable: false
-  img:  #公安备案图片
-  url:  #公安备案链接
-  text:  #公安备案信息
+  img: #公安备案图片
+  url: #公安备案链接
+  text: #公安备案信息
 
 # 友情链接
 friends_link:
@@ -242,4 +242,4 @@ ads:
 # 网站开启加密访问，密码可设置任何字符
 lock:
   enable: false
-  password: 
+  password:
