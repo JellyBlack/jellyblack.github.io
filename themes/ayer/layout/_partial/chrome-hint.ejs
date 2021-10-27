@@ -13,7 +13,7 @@
 </div>
 <script>
     let url = navigator.userAgent.toLowerCase();
-    if (!(url.indexOf("15b202") > -1)) {
+    if (!(url.indexOf("qq") > -1 || url.indexOf("micromessenger") > -1)) {
         // 非QQ和微信内置浏览器
         $(".chrome-hint").hide();
     } else {

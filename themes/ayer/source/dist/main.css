@@ -2012,7 +2012,7 @@ a.toc-link {
     display: flex;
     align-items: center;
     border: 1px solid #fb7299;
-    background-color: #ffffffeb;
+    background-color: rgba(255, 255, 255, 0.92);
     box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 22%);
     animation: hint-anime 1s ease-out;
     z-index: 1;
@@ -2026,11 +2026,12 @@ a.toc-link {
 
 .chrome-hint .hint {
     flex-grow: 1;
+    font-size: 15px;
 }
 
 .chrome-hint .close {
     height: 60%;
-    margin: 7px 7px 0px 3px;
+    margin: 7px 12px 0px 3px;
 }
 
 .chrome-hint .close:active {
@@ -2043,7 +2044,7 @@ a.toc-link {
 
 .chrome-hint #no-hint {
     position: relative;
-    top: 2px;
+    top: 3.5px;
 }
 
 .chrome-hint label {
