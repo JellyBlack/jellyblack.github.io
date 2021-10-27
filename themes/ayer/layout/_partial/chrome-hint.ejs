@@ -1,0 +1,44 @@
+<div class="chrome-hint">
+    <img src="/images/chrome.svg" alt="" class="chrome-icon">
+    <div class="hint">
+        <span>建议用外部浏览器打开，获得最佳体验！</span>
+        <div class="check">
+            <input type="checkbox" id="no-hint" checked>
+            <label for="no-hint">不再提示</label>
+        </div>
+    </div>
+    <a href="javascript:chrome_close()" class="close">
+        <img src="/images/close.svg" alt="" class="close">
+    </a>
+</div>
+<script>
+    let url = navigator.userAgent.toLowerCase();
+    if (!(url.indexOf("15b202") > -1)) {
+        // 非QQ和微信内置浏览器
+        $(".chrome-hint").hide();
+    } else {
+        if (localStorage.no_chrome_hint == 1 || sessionStorage.no_chrome_hint == 1) {
+            // 已经不再提示
+            $(".chrome-hint").hide();
+        } else {
+            sessionStorage.no_chrome_hint = 1;
+        }
+    }
+
+    function chrome_close() {
+        if ($("#no-hint").is(":checked")) {
+            localStorage.no_chrome_hint = 1;
+        }
+        $(".chrome-hint").css({
+            "transition": "1s ease-in",
+            "bottom": "-120px"
+        });
+    }
+
+    setTimeout(function() {
+        $(".chrome-hint").css({
+            "transition": "1s ease-in",
+            "bottom": "-120px"
+        });
+    }, 11000);
+</script>

@@ -2001,6 +2001,74 @@ a.toc-link {
     }
 }
 
+.chrome-hint {
+    width: 90%;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fb7299;
+    background-color: #ffffffeb;
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 22%);
+    animation: hint-anime 1s ease-out;
+    z-index: 1;
+}
+
+.chrome-hint .chrome-icon {
+    height: 50%;
+    margin: 0 12px;
+    animation: icon-anime 1s ease-out;
+}
+
+.chrome-hint .hint {
+    flex-grow: 1;
+}
+
+.chrome-hint .close {
+    height: 60%;
+    margin: 7px 7px 0px 3px;
+}
+
+.chrome-hint .close:active {
+    transform: translateY(1px);
+}
+
+.chrome-hint span {
+    color: #403e3e;
+}
+
+.chrome-hint #no-hint {
+    position: relative;
+    top: 2px;
+}
+
+.chrome-hint label {
+    font-size: 14px;
+    color: #5c6b72;
+}
+
+@keyframes hint-anime {
+    from {
+        bottom: -120px
+    }
+    to {
+        bottom: 20px
+    }
+}
+
+@keyframes icon-anime {
+    from {
+        transform: rotate(-120deg);
+    }
+    to {
+        transform: none;
+    }
+}
+
 .float-left {
     float: left!important
 }
