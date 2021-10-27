@@ -19,23 +19,27 @@ html {
 }
 
 h1 {
-    font-size: 30px
+    font-size: 30px;
+}
+
+h1:not([id=title]) {
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 28px
-}
-
-h3 {
     font-size: 26px
 }
 
+h3 {
+    font-size: 22px
+}
+
 h4 {
-    font-size: 24px
+    font-size: 20px
 }
 
 h5 {
-    font-size: 21px
+    font-size: 19px
 }
 
 h6 {
@@ -214,10 +218,11 @@ html {
     height: 100%
 }
 
+body,
 html {
     font-size: 62.5%;
     -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
+    overflow-y: scroll;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -553,11 +558,11 @@ button {
     width: 8rem;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
-    box-shadow: 1px 0px 20px 0px rgb(0 0 0 / 20%);
 }
 
 .sidebar.on {
-    left: 0
+    left: 0;
+    box-shadow: 1px 0px 20px 0px rgb(0 0 0 / 20%)
 }
 
 .navbar-toggle {
@@ -570,13 +575,12 @@ button {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
-    box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 40%);
     transition: all .3s ease-in-out;
     opacity: .5
 }
 
 .navbar-toggle:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 .navbar-toggle:before {
