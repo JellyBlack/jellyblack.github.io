@@ -1,66 +1,68 @@
 <% if (theme.broadcast.type===1 && theme.broadcast.text){ %>
-    <div class="notice" style="margin-top:50px">
-        <i class="ri-heart-fill"></i>
-        <div class="notice-content">
-            <%= theme.broadcast.text %>
-        </div>
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content">
+        <%= theme.broadcast.text %>
     </div>
-    <% } %>
-        <% if (theme.broadcast.type===2){ %>
-            <div class="notice" style="margin-top:50px">
-                <i class="ri-heart-fill"></i>
-                <div class="notice-content" id="broad"></div>
-            </div>
-            <script type="text/javascript">
-                var lang = window.navigator.language;
-                var show_hitokoto = true;
-                if (lang == 'zh-CN' && /github\.io$/.test(window.location.hostname)) {
-                    var count;
-                    if (localStorage.redirect_broadcast_count) {
-                        count = Number(localStorage.redirect_broadcast_count) + 1;
-                        localStorage.redirect_broadcast_count = count;
-                    } else {
-                        count = 1;
-                        localStorage.redirect_broadcast_count = 1;
-                    }
-                    if (count < 2) {
-                        show_hitokoto = false;
-                        document.getElementById("broad").innerHTML = `加载太慢？试试访问<a href="https://jellyblack.gitee.io" target=_self><b>Gitee镜像站</b></a>吧！（下次自动隐藏）`;
-                    }
-                }
-                if (show_hitokoto) {
-                    fetch('https://v1.hitokoto.cn')
-                        .then(response => response.json())
-                        .then(data => {
-                            document.getElementById("broad").innerHTML = data.hitokoto;
-                        })
-                        .catch(console.error)
-                }
-            </script>
-            <% } %>
-                <style>
-                    .notice {
-                        padding: 20px;
-                        border: 1px dashed #e6e6e6;
-                        color: #969696;
-                        position: relative;
-                        display: inline-block;
-                        width: 100%;
-                        background: #fbfbfb50;
-                        border-radius: 10px;
-                    }
-                    
-                    .notice i {
-                        float: left;
-                        color: #999;
-                        font-size: 16px;
-                        padding-right: 10px;
-                        vertical-align: middle;
-                        margin-top: -2px;
-                    }
-                    
-                    .notice-content {
-                        display: initial;
-                        vertical-align: middle;
-                    }
-                </style>
+</div>
+<% } %>
+<% if (theme.broadcast.type===2){ %>
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    var lang = window.navigator.language;
+    var show_hitokoto = true;
+    if (lang == 'zh-CN' && /github\.io$/.test(window.location.hostname)) {
+        var count;
+        if (localStorage.redirect_broadcast_count) {
+            count = Number(localStorage.redirect_broadcast_count) + 1;
+            localStorage.redirect_broadcast_count = count;
+        } else {
+            count = 1;
+            localStorage.redirect_broadcast_count = 1;
+        }
+        if (count < 2) {
+            show_hitokoto = false;
+            document.getElementById("broad").innerHTML = `加载太慢？试试访问<a href="https://jellyblack.gitee.io" target=_self><b>Gitee镜像站</b></a>吧！（下次自动隐藏）`;
+        }
+    }
+    if (show_hitokoto) {
+        fetch('https://v1.hitokoto.cn')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("broad").innerHTML = data.hitokoto;
+            })
+            .catch(console.error)
+    }
+
+</script>
+<% } %>
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+
+</style>

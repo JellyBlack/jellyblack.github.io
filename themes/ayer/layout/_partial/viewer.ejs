@@ -71,7 +71,7 @@
 <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
 
 <script>
-    function viewer_init() {
+    function viewer_init () {
         let pswpElement = document.querySelectorAll('.pswp')[0];
         let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
 
@@ -85,7 +85,7 @@
                     let img = $em2.getAttribute('data-idx', i2)
                     let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
                     let title = $em2.getAttribute('alt')
-                        // 获得原图尺寸
+                    // 获得原图尺寸
                     const image = new Image()
                     image.src = src
                     items.push({
@@ -103,4 +103,5 @@
         })
     }
     viewer_init()
+
 </script>

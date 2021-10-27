@@ -1,46 +1,48 @@
 <%- partial('_partial/head') %>
 
-    <body>
-        <div id="app">
-            <% if (theme.click_effect===2){ %>
-                <canvas class="fireworks"></canvas>
-                <style>
-                    .fireworks {
-                        position: fixed;
-                        left: 0;
-                        top: 0;
-                        z-index: 99999;
-                        pointer-events: none;
-                    }
-                </style>
-                <% } %>
-                    <% if (theme.click_effect===3){ %>
-                        <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
-                        <% } %>
-                            <main class="content on">
-                                <%- body %>
-                                    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-                            </main>
-                            <div class="float_btns">
-                                <%- partial('_partial/float-btns') %>
-                            </div>
-                            <script>
-                                if (localStorage.show_btns == 0) {
-                                    document.getElementsByClassName("float_btns")[0].setAttribute("style", "display: none;");
-                                }
-                            </script>
-                            <aside class="sidebar on">
-                                <%- partial('_partial/sidebar') %>
-                            </aside>
-                            <%- partial('_partial/modal') %>
-                                <%- partial('_partial/after-footer') %>
+<body>
+    <div id="app">
+        <% if (theme.click_effect===2){ %>
+        <canvas class="fireworks"></canvas>
+        <style>
+            .fireworks {
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 99999;
+                pointer-events: none;
+            }
 
-                                    <% if (theme.music&&theme.music.enable){ %>
-                                        <%- partial('_partial/music') %>
-                                            <% } %>
-                                                <%- partial('_partial/lock') %>
-                                                    <%- partial('_partial/chrome-hint') %>
+        </style>
+        <% } %>
+        <% if (theme.click_effect===3){ %>
+        <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+        <% } %>
+        <main class="content on">
+            <%- body %>
+            <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+        </main>
+        <div class="float_btns">
+            <%- partial('_partial/float-btns') %>
         </div>
-    </body>
+        <script>
+            if (localStorage.show_btns == 0) {
+                document.getElementsByClassName("float_btns")[0].setAttribute("style", "display: none;");
+            }
 
-    </html>
+        </script>
+        <aside class="sidebar on">
+            <%- partial('_partial/sidebar') %>
+        </aside>
+        <%- partial('_partial/modal') %>
+        <%- partial('_partial/after-footer') %>
+
+        <% if (theme.music&&theme.music.enable){ %>
+        <%- partial('_partial/music') %>
+        <% } %>
+        <%- partial('_partial/lock') %>
+        <%- partial('_partial/chrome-hint') %>
+    </div>
+</body>
+
+</html>

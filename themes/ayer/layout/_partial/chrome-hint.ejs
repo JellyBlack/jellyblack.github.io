@@ -25,7 +25,7 @@
         }
     }
 
-    function chrome_close() {
+    function chrome_close () {
         if ($("#no-hint").is(":checked")) {
             localStorage.no_chrome_hint = 1;
         }
@@ -35,10 +35,11 @@
         });
     }
 
-    setTimeout(function() {
+    setTimeout(function () {
         $(".chrome-hint").css({
             "transition": "1s ease-in",
             "bottom": "-120px"
         });
     }, 11000);
+
 </script>
