@@ -145,7 +145,7 @@ button::-moz-focus-inner {
 [type=reset]-moz-focusring,
 [type=submit]-moz-focusring,
 button:-moz-focusring {
-    outline: 1px dotted ButtonText
+    outline: 1px dotted
 }
 
 fieldset {
@@ -222,7 +222,6 @@ body,
 html {
     font-size: 62.5%;
     -ms-text-size-adjust: 100%;
-    overflow-y: scroll;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -376,7 +375,7 @@ button {
 .archive-year-wrap .archive-year:hover,
 .article-category .article-category-link:hover,
 .article-date:hover {
-    color: #5c6b72
+    color: black;
 }
 
 .archive-article-inner {
@@ -558,11 +557,6 @@ button {
     width: 8rem;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
-}
-
-.sidebar.on {
-    left: 0;
-    box-shadow: 1px 0px 20px 0px rgb(0 0 0 / 20%)
 }
 
 .navbar-toggle {
@@ -1094,7 +1088,9 @@ button {
     content: "\eaf2";
     margin-right: .15rem;
     font-family: remixicon;
-    opacity: .5
+    opacity: .5;
+    position: relative;
+    top: 2px;
 }
 
 .article-category {
@@ -1106,7 +1102,9 @@ button {
     content: "\efde";
     font-family: remixicon;
     margin-right: .15rem;
-    opacity: .6
+    opacity: .6;
+    position: relative;
+    top: 2px;
 }
 
 .archive-article-header+.article-category {
@@ -1170,6 +1168,12 @@ button {
     margin-top: 0
 }
 
+i.ri-quill-pen-line,
+i.ri-book-open-line {
+    position: relative;
+    top: 2px;
+}
+
 .article-header {
     position: relative
 }
@@ -1192,6 +1196,10 @@ button {
     text-decoration: none;
     color: #403e3e;
     padding-left: 2rem
+}
+
+.article-header .article-title:not(h1):hover {
+    color: #787263;
 }
 
 .article-header .article-author {
@@ -1227,7 +1235,9 @@ button {
     color: #5d5a5a;
     content: "\eec3";
     font-family: remixicon;
-    margin-right: .5rem
+    margin-right: .5rem;
+    position: relative;
+    bottom: 2px;
 }
 
 .article-tag-list .article-tag-list-item {
@@ -1247,6 +1257,10 @@ button {
     position: relative;
     border-radius: 9px;
     background-color: #5d5a5a
+}
+
+.article-tag-list .article-tag-list-link:hover {
+    background-color: black;
 }
 
 .article-comment-link {
@@ -1712,17 +1726,27 @@ a.toc-link {
     border: 1px dashed #dfdede
 }
 
-.articles .article-entry .article-more-link {
+.article-more-link {
     float: right;
-    background-color: #403e3e;
+    background-color: #7792dd;
     padding: .5rem 1rem;
     border-radius: 4px;
-    color: #fff!important;
-    text-decoration: none
+    color: #fff !important;
+    text-decoration: none;
+    transition: background-color 200ms;
 }
 
 .article-more-link {
     box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 20%);
+}
+
+.article-more-link:hover {
+    background-color: #a877dd;
+}
+
+.article-more-link:active {
+    background-color: #ea8aba;
+    transition: none;
 }
 
 .articles .article-entry .article-gallery {
@@ -2486,10 +2510,9 @@ pre .id {
 .share-wrap {
     min-height: 20px;
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
     right: 0;
-    bottom: 0;
     width: 250px;
     background-color: #f5f5f5;
     border-radius: 2px
@@ -2531,6 +2554,7 @@ pre .id {
 }
 
 .share-outer:hover {
+    color: #19a1f8;
     transform: none;
     cursor: pointer
 }

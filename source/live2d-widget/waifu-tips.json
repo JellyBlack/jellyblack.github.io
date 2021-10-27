@@ -186,7 +186,7 @@
             ]
         },
         {
-            "selector": ".article-title,.archive-article-title,.search-result-title",
+            "selector": ".article-title:not(h1),.archive-article-title,.search-result-title",
             "text": [
                 "要看看 <span>{text}</span> 这篇文章吗？"
             ]
