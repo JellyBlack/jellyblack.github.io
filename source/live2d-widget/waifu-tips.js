@@ -102,13 +102,16 @@ function loadWidget(config) {
             "Plant a tree!<br>种一棵树！"
         ];
         var last_show_slash = 0;
-        document.querySelector(".grassblock-wrapper").addEventListener("mouseover", () => {
-            let now = Date.now();
-            if (now - last_show_slash > 3000) {
-                last_show_slash = now;
-                showMessage(randomSelection(slash_messageArray), 6000, 9);
-            }
-        });
+        var grassblock = document.querySelector(".grassblock-wrapper");
+        if(grassblock){
+            grassblock.addEventListener("mouseover", () => {
+                let now = Date.now();
+                if (now - last_show_slash > 3000) {
+                    last_show_slash = now;
+                    showMessage(randomSelection(slash_messageArray), 6000, 9);
+                }
+            });
+        }
         document.onkeydown = function(event) {
             var e = event || window.event || arguments.callee.caller.arguments[0];
             if (e && e.keyCode == 123) {
