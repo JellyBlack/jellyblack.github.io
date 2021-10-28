@@ -871,6 +871,82 @@ button {
     color: #1e3e3f
 }
 
+.grassblock-wrapper {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transition: transform 500ms;
+}
+
+.grassblock-wrapper:hover {
+    transform: scale(1.2);
+}
+
+.grassblock {
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    transition: width 1s, height 1s;
+    animation: rotate 15s infinite linear;
+}
+
+.grassblock div:not(.shadow) {
+    background-image: url(/images/grassblock.png);
+    background-size: 150px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    image-rendering: pixelated;
+}
+
+.grassblock .shadow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 14px 20px rgba(0, 0, 0, 0.4);
+    transform: rotateX(-90deg) translateZ(44px) scale(0.6);
+}
+
+.grassblock .block-top {
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.grassblock .block-bottom {
+    background-position-x: 50px;
+    transform: rotateX(-90deg) translateZ(25px);
+}
+
+.grassblock .block-front {
+    background-position-x: 100px;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.grassblock .block-back {
+    background-position-x: 100px;
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.grassblock .block-left {
+    background-position-x: 100px;
+    transform: rotateY(270deg) translateZ(25px);
+}
+
+.grassblock .block-right {
+    background-position-x: 100px;
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+@keyframes rotate {
+    form {
+        transform: rotateX(-30deg) rotateY(0);
+    }
+    to {
+        transform: rotateX(-30deg) rotateY(1turn)
+    }
+}
+
 .float_btns {
     position: sticky;
     bottom: 24.5rem;
@@ -2075,11 +2151,11 @@ a.toc-link {
 }
 
 @keyframes background-anime {
-    from{
+    from {
         background-position-x: 0px;
         background-position-y: 0px;
     }
-    to{
+    to {
         background-position-x: -120px;
         background-position-y: -120px;
     }

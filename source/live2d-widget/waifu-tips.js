@@ -88,6 +88,27 @@ function loadWidget(config) {
                 document.getElementById("waifu").style.visibility = "hidden";
             }, 3000);
         });
+        let slash_messageArray = [
+            "Limited edition!<br>限量版！",
+            "Exploding creepers!<br>爆炸的苦力怕！",
+            "sqrt(-1) love you!",
+            "A skeleton popped out!<br>一只骷髅跳出来了！",
+            "The sky is the limit!<br>天空即为极限！",
+            "Do you want to join my server?<br>你想来我的服务器玩玩吗？",
+            "Put a little fense arount it!<br>用点栅栏把它围起来！",
+            "So sweet, like a nice bon bon!<br>就像好糖果那样甜！",
+            "/give @a hugs 64",
+            "Don't feed chocolate to parrots!<br>别喂鹦鹉吃巧克力！",
+            "Plant a tree!<br>种一棵树！"
+        ];
+        var last_show_slash = 0;
+        document.querySelector(".grassblock-wrapper").addEventListener("mouseover", () => {
+            let now = Date.now();
+            if (now - last_show_slash > 3000) {
+                last_show_slash = now;
+                showMessage(randomSelection(slash_messageArray), 6000, 9);
+            }
+        });
         document.onkeydown = function(event) {
             var e = event || window.event || arguments.callee.caller.arguments[0];
             if (e && e.keyCode == 123) {
