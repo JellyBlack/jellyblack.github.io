@@ -257,7 +257,10 @@ $("#checkbox_show_btns").click(function(){
         $(".float_btns").hide();
 	}
 });
-let messageTimer;
+try{
+    let messageTimer;
+}
+catch(e){}
 function showMessage(text, timeout, priority) {
 	if (!text || (sessionStorage.getItem("waifu-text") && sessionStorage.getItem("waifu-text") > priority)) return;
 	if (messageTimer) {

@@ -32,6 +32,47 @@
     </title>
     <% if (theme.favicon){ %>
     <%- js('/js/jquery-3.6.0.min') %>
+    <%- js('/js/jquery.pjax.js') %>
+    <script>
+        // pjax动态更新
+        if (location.pathname == '/') {
+            $(document).pjax("a:not(#reload)[href^='/'][href!='/']", "section.outer", {
+                fragment: "section.outer"
+            });
+            $(document).on('pjax:beforeReplace', function () {
+                if(!$("#reload").hasClass("ready")){
+                    $(".cover, .notice").remove()
+                }
+            });
+        } else {
+            $(document).pjax("a:not(#reload)[href^='/'][href!='/']", ".article-inner", {
+                fragment: ".article-inner"
+            });
+        }
+        // 由于Gitee将缓存有效期设得很长，此处执行手动刷新，超时10分钟，与GitHub保持一致
+        // 仅刷新HTML本身，HTML引用的外部资源仍使用浏览器缓存
+        if (/gitee\.io$/.test(window.location.hostname.toLowerCase())) {
+            var now = Date.now();
+            if (localStorage.gitee_last_updated == undefined || now - localStorage.gitee_last_updated >= 600000) {
+                localStorage.gitee_last_updated = now;
+                if (location.pathname == '/') {
+                    $(document).pjax("#reload", ".articles", {
+                    fragment: ".articles"
+                    });
+                }
+                else{
+                    $(document).pjax("#reload", ".article-inner", {
+                    fragment: ".article-inner"
+                    });
+                }
+                $("#reload").addClass("ready");
+                $("#reload").attr("href", window.location.href);
+                $("#reload").click();
+                $("#reload").removeClass("ready");
+            }
+        }
+
+    </script>
     <link rel="shortcut icon" href="<%- theme.favicon %>" />
     <% } %>
     <%- css('dist/main') %>
