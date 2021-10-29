@@ -25,12 +25,6 @@
         <%- partial('article', {post: post, index: true}) %>
         <% }) %>
     </article>
-    <script>
-        if (localStorage.hide_welcome == 1) {
-            document.getElementById("post-Welcome").setAttribute("style", "display: none;");
-        }
-
-    </script>
     <% } else { %>
     <% var last; %>
     <% page.posts.each(function(post, i){ %>

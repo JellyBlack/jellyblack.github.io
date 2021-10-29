@@ -75,13 +75,6 @@
       %>
             <%- partial('post/tag') %>
         </footer>
-        <script>
-            if (sessionStorage.hide_copyright == 1) {
-                document.getElementsByClassName("declare")[0].setAttribute("style", "display: none;");
-                document.getElementsByClassName("article-footer")[0].setAttribute("style", "display: none;");
-            }
-
-        </script>
     </div>
 
     <% if (!index){ %>
