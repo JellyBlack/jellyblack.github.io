@@ -5,7 +5,7 @@
     font-display: swap
 }
 
-[class*=" ri-"],
+[class*='ri-'],
 [class^=ri-] {
     display: inline-block;
     font-family: remixicon!important;
@@ -2987,7 +2987,8 @@ pre .id {
 }
 
 .totop {
-    margin-bottom: .8rem
+    margin-bottom: .8rem;
+    opacity: 0;
 }
 
 .totop:hover>i {
