@@ -92,7 +92,7 @@ if(/^\/about/.test(window.location.pathname)){
 					$("#commit_info").html("上次提交时间：" + formatDate(new Date(date)) + " <a id='commit_info_href' href='javascript:show_detail()'>查看详情</a>");
 					show_detail = function(){
 						$('#commit_info_href').hide();
-						$('#commit_info').append('<br>提交者：<a href="mailto://' + data.commit.committer.email + '">' + data.commit.committer.name + '</a><br>SHA：<a href="' + data.html_url + '">' + data.sha + '</a><br>#提交信息#<br>' + data.commit.message.replace(/\\n+/g, "<br>"));
+						$('#commit_info').append('<br>提交者：<a href="mailto://' + data.commit.committer.email + '">' + data.commit.committer.name + '</a><br>SHA：<a href="' + data.html_url + '">' + data.sha + '</a><br>#提交信息#<br>' + data.commit.message.replace(/\n+/g, "<br>"));
 					}
 				}
 				catch(e){
@@ -215,7 +215,6 @@ $("#checkbox_hide_copyright").click(function(){
         if(sessionStorage.hide_copyright_confirmed == 1){
             sessionStorage.setItem("hide_copyright", 1);
             $(".declare").hide();
-            $(".article-footer").hide();
             $("#footer").hide();
         }
         else{
@@ -257,10 +256,9 @@ $("#checkbox_show_btns").click(function(){
         $(".float_btns").hide();
 	}
 });
-try{
-    let messageTimer;
+if(typeof messageTimer === "undefined"){
+    var messageTimer;
 }
-catch(e){}
 function showMessage(text, timeout, priority) {
 	if (!text || (sessionStorage.getItem("waifu-text") && sessionStorage.getItem("waifu-text") > priority)) return;
 	if (messageTimer) {
