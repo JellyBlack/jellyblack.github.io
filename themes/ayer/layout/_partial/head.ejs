@@ -218,11 +218,18 @@
             var now = Date.now();
             if (localStorage.gitee_last_updated == undefined || now - localStorage.gitee_last_updated >= 600000) {
                 localStorage.gitee_last_updated = now;
-                $(document).pjax("#reload", "main", {
-                    fragment: "main",
-                    push: false
-                });
                 $("#reload").attr("href", window.location.href);
+                if (window.location.pathname == '/') {
+                    $(document).pjax("#reload", ".articles", {
+                        fragment: ".articles",
+                        push: false
+                    });
+                } else {
+                    $(document).pjax("#reload", "main", {
+                        fragment: "main",
+                        push: false
+                    });
+                }
                 $("#reload").click();
             }
         });
