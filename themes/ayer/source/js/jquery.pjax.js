@@ -186,10 +186,9 @@
         // Without adding this secret parameter, some browsers will often
         // confuse the two.
         if (!options.data) options.data = {}
-        if ($.isArray(options.data)) {
-            options.data.push({ name: '_pjax', value: options.container })
-        } else {
-            options.data._pjax = options.container
+        var timeDelta = Date.now() % 600000; // 当前时间距上个整十分钟的毫秒数
+        if (isGitee) {
+            options.data.t = Math.floor((Date.now() - timeDelta) / 600000);
         }
 
         function fire(type, args, props) {
@@ -576,7 +575,7 @@
     //
     // Returns sanitized url.href String.
     function stripInternalParams(url) {
-        url.search = url.search.replace(/([?&])(_pjax|_)=[^&]*/g, '').replace(/^&/, '')
+        url.search = url.search.replace(/([?&])(t|_)=[^&]*/g, '').replace(/^&/, '')
         return url.href.replace(/\?($|#)/, '$1')
     }
 

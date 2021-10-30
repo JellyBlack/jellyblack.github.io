@@ -179,6 +179,7 @@
                     ele.setAttribute("style", "display: none;");
                 }
                 document.getElementById("footer").setAttribute("style", "display: none;");
+                document.getElementsByClassName("article-footer")[0].setAttribute("style", "display: none;");
             }
             if (localStorage.show_btns == 0) {
                 document.getElementsByClassName("float_btns")[0].setAttribute("style", "display: none;");
@@ -187,9 +188,6 @@
         $(apply_settings);
 
         // pjax动态更新
-        $(document).pjax("a:not(#reload)[href^='/']", "main", {
-            fragment: "main"
-        });
         var pathname = window.location.pathname;
         $(document).on('pjax:complete', function () {
             // 如果页面不一致，则滚动到顶部，并执行main
@@ -206,20 +204,25 @@
                 clipboard(window, document);
             })
         })
+        isGitee = /gitee\.io$/.test(window.location.hostname.toLowerCase());
+        $(document).pjax("a:not(#reload)[href^='/']", "main", {
+            fragment: "main"
+        });
         // 由于Gitee将缓存有效期设得很长，此处执行手动刷新，超时10分钟，与GitHub保持一致
         // 仅刷新HTML本身，HTML引用的外部资源仍使用浏览器缓存
         $(function () {
-            if (/gitee\.io$/.test(window.location.hostname.toLowerCase())) {
-                var now = Date.now();
-                if (localStorage.gitee_last_updated == undefined || now - localStorage.gitee_last_updated >= 600000) {
-                    localStorage.gitee_last_updated = now;
-                    $(document).pjax("#reload", "main", {
-                        fragment: "main",
-                        push: false
-                    });
-                    $("#reload").attr("href", window.location.href);
-                    $("#reload").click();
-                }
+            if (!isGitee) {
+                return;
+            }
+            var now = Date.now();
+            if (localStorage.gitee_last_updated == undefined || now - localStorage.gitee_last_updated >= 600000) {
+                localStorage.gitee_last_updated = now;
+                $(document).pjax("#reload", "main", {
+                    fragment: "main",
+                    push: false
+                });
+                $("#reload").attr("href", window.location.href);
+                $("#reload").click();
             }
         });
 

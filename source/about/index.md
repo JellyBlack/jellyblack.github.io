@@ -214,17 +214,14 @@ $("#checkbox_hide_copyright").click(function(){
 	if($("#checkbox_hide_copyright").is(":checked")){
         if(sessionStorage.hide_copyright_confirmed == 1){
             sessionStorage.setItem("hide_copyright", 1);
-            $(".declare").hide();
-            $("#footer").hide();
+            $(".declare, .article-footer, #footer").hide();
         }
         else{
             var flag = confirm("确定隐藏版权信息吗？该功能仅供网页截图等，站长始终保留版权。仅本次浏览有效。");
             if(flag){
                 sessionStorage.setItem("hide_copyright_confirmed", 1);
                 sessionStorage.setItem("hide_copyright", 1);
-                $(".declare").hide();
-                $(".article-footer").hide();
-                $("#footer").hide();
+                $(".declare, .article-footer, #footer").hide();
             }
             else{
                 $("#checkbox_hide_copyright").prop("checked", false);
@@ -233,9 +230,7 @@ $("#checkbox_hide_copyright").click(function(){
 	}
 	else{
 		sessionStorage.setItem("hide_copyright", 0);
-        $(".declare").show();
-        $(".article-footer").show();
-        $("#footer").show();
+        $(".declare, .article-footer, #footer").show();
 	}
 });
 $("#checkbox_show_subtitle").click(function(){
