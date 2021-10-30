@@ -186,7 +186,11 @@
         // Without adding this secret parameter, some browsers will often
         // confuse the two.
         if (!options.data) options.data = {}
-        options.data.r = (Math.random() + '').replace(/.\./, '');
+        if ($.isArray(options.data)) {
+            options.data.push({ name: '_pjax', value: options.container })
+        } else {
+            options.data._pjax = options.container
+        }
 
         function fire(type, args, props) {
             if (!props) props = {}
@@ -572,7 +576,7 @@
     //
     // Returns sanitized url.href String.
     function stripInternalParams(url) {
-        url.search = url.search.replace(/([?&])(r|_)=[^&]*/g, '').replace(/^&/, '')
+        url.search = url.search.replace(/([?&])(_pjax|_)=[^&]*/g, '').replace(/^&/, '')
         return url.href.replace(/\?($|#)/, '$1')
     }
 
