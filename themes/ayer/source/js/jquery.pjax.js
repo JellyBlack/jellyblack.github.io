@@ -186,7 +186,6 @@
         // Without adding this secret parameter, some browsers will often
         // confuse the two.
         if (!options.data) options.data = {}
-        var timeDelta = Date.now() % 600000; // 当前时间距上个整十分钟的毫秒数
         if (isGitee) {
             options.data.t = Math.floor((Date.now() - timeDelta) / 600000);
         }

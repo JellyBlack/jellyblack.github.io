@@ -205,6 +205,7 @@
             })
         })
         isGitee = /gitee\.io$/.test(window.location.hostname.toLowerCase());
+        timeDelta = Date.now() % 600000; // 当前时间距上个整十分钟的毫秒数
         $(document).pjax("a:not(#reload)[href^='/']", "main", {
             fragment: "main"
         });
