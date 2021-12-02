@@ -10,7 +10,7 @@ categories: [GitHub项目, Python]
 
 # 项目起源
 
-两次忘了疫情填报，去辅导员办公室喝了两次茶，立志决定改掉爱忘事的坏习惯，~~即写一个懒人脚本，彻底忘掉填报这事~~。以下文章我将侧重于抓包与分析的过程。如你是西工大校友，可直接拿去用：https://github.com/JellyBlack/NPW-pandemic-auto-fill-in
+两次忘了疫情填报，去辅导员办公室喝了两次茶，立志决定改掉爱忘事的坏习惯，~~即写一个懒人脚本，彻底忘掉填报这事~~。以下文章我将侧重于抓包与分析的过程。如你是西工大校友，可直接拿去用：https://github.com/JellyBlack/NPU-pandemic-auto-fill-in
 
 （**低调使用！不要张扬！**）
 
@@ -198,6 +198,6 @@ jobs:
 
 我以前没学过Python，现学现用，折腾半天，总算把自动填报搞定了。妈妈再也不用担心我的学习~
 
-查看完整项目代码请前往GitHub仓库：https://github.com/JellyBlack/NPW-pandemic-auto-fill-in
+查看完整项目代码请前往GitHub仓库：https://github.com/JellyBlack/NPU-pandemic-auto-fill-in
 
 该项目仅用于学习测试。疫情管理本意是好的，只不过每天填报对于懒人不友好（所以这就是你折腾脚本的原因？）。在此处记录一下抓包分析的思路，便于以后借鉴。如果你要使用，拿去就好了，配置可参考README文档。**低调使用！**
