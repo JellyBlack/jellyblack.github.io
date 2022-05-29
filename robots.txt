@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /images/
+Allow: /indexes/
+Allow: /about/
+Disallow: /js/
+Disallow: /css/
+Disallow: /dist/
+Disallow: /live2d-widget/

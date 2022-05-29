@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>欢迎来到Jelly的小窝~</title>
+    <url>//post/fc4592d957ed/</url>
+    <content><![CDATA[<p>终于等到你！快来听听站长唠嗑吧~</p>
+<h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><p>本站是由<a href="https://github.com/JellyBlack/jellyblack.github.io">GitHub</a>和<a href="https://gitee.com/jellyblack/jellyblack">Gitee</a>托管的个人博客，由1人团队精心打造，耗资0亿，用于发表学习笔记、杂谈等。</p>
+<p><a href="https://jellyblack.github.io/">GitHub站点</a>用于实际开发与维护，位于海外，国内访问较慢。</p>
+<p><a href="https://jellyblack.gitee.io/">Gitee站点</a>与GitHub站点完全同步，位于国内，速度快。<strong>国内用户建议访问Gitee站点</strong>。</p>
+<h1 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h1><h2 id="浏览博客"><a href="#浏览博客" class="headerlink" title="浏览博客"></a>浏览博客</h2><p>点击左上角的<strong>悬浮按钮</strong>可以隐藏&#x2F;显示侧边栏。</p>
+<p><strong>时间轴</strong>下记录了本站按时间排序的所有博客。</p>
+<p>点击<strong>博客标题</strong>可以浏览博客，点击博客内的<strong>分类</strong>或<strong>标签</strong>可以浏览该分类&#x2F;标签下的所有博客。</p>
+<p>左下角有<strong>搜索</strong>按钮，可以搜索博客标题和正文。</p>
+<p>右下角有<strong>夜间模式</strong>和<strong>回到顶部</strong>按钮。</p>
+<p>点击正文中的图片可以<strong>放大查看</strong>。</p>
+<p>在PC端上，右侧会显示该博客的<strong>目录</strong>，可以快速跳转。</p>
+<span id="more"></span>
+
+<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>在每个博客下方都有评论区域。如要评论，请填写以下信息。</p>
+<p><strong>昵称</strong>：用于展示你的用户名。</p>
+<p><strong>邮箱</strong>（非必需）：邮箱地址用于生成你的头像，不填则用默认头像。</p>
+<p><strong>网址</strong>（非必需）：此处可以填你的社交网站主页。当然如果你有个人网站也可以填ヾ(๑╹◡╹)ﾉ”</p>
+<p><strong>评论内容</strong>：支持Emoji表情和Markdown格式。</p>
+<p>注意：评论没有审核机制，用户无法撤销。<strong>请勿在评论里发表个人隐私信息和违反法律法规的信息。</strong></p>
+<h2 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h2><p>看到右下角可爱的二次元看板娘了吗？</p>
+<img src="/post/fc4592d957ed/%E7%9C%8B%E6%9D%BF%E5%A8%98.jpg" class="">
+
+<p>由于手机屏幕空间有限，移动端不会展示看板娘，只有PC端上有，见谅~</p>
+<p>你可以点击与看板娘交互哦！就……就是交互啦！</p>
+<p>此处特别感谢<a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a>提供支持。</p>
+<h2 id="设置-amp-关于"><a href="#设置-amp-关于" class="headerlink" title="设置&amp;关于"></a>设置&amp;关于</h2><p>在“<strong>关于</strong>”页面可以看到当前站点信息，并可以调整浏览设置。可以调整评论、看板娘、置顶文章、轮播文字、悬浮按钮等的显示状态。</p>
+<h1 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h1><p>以下内容供高级用户使用。</p>
+<h2 id="贡献代码"><a href="#贡献代码" class="headerlink" title="贡献代码"></a>贡献代码</h2><p>你可以参与网站的建设、博客的编纂等。如参与贡献，你将列入GitHub仓库的贡献者名单中。</p>
+<p>首先去<a href="https://github.com/JellyBlack/jellyblack.github.io">GitHub仓库</a>，Fork该仓库到你的账号，接下来把<strong>你的仓库</strong>克隆到本地：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/&lt;your username&gt;/jellyblack.github.io</span><br></pre></td></tr></table></figure>
+
+<p>然后修改代码或编辑博客，提交commit并push到你的仓库。最后去你的仓库主页，提交<strong>pull request</strong>。如果我通过了你的申请，你就成为贡献者啦~</p>
+<p>注意：不要克隆Gitee仓库，因为Gitee站点仅作为国内的镜像站，站长不维护。</p>
+<h2 id="我也要建站"><a href="#我也要建站" class="headerlink" title="我也要建站"></a>我也要建站</h2><p>喜欢我网站的风格吗？你可以直接把源码复制过去，并快速创建你的网站（非商业使用）。本网站致力于技术交流与共享，代码全部开源。</p>
+<p>要更好地配置你的博客网站，建议仔细浏览<a href="https://hexo.io/">Hexo</a>博客框架和<a href="https://github.com/Shen-Yu/hexo-theme-ayer">Aron</a>主题的官方文档，并需要一定的前端开发技术。</p>
+<h2 id="版权说明"><a href="#版权说明" class="headerlink" title="版权说明"></a>版权说明</h2><p>开源不等于无版权。除非另有说明，本站所有博客采用CC BY-NC 4.0许可授权，这意味着你可以：</p>
+<ul>
+<li>自由地复制博客的内容，无需请求作者同意；</li>
+<li>对博客进行修改或二次创作。</li>
+</ul>
+<p>但须遵守以下条件：</p>
+<ul>
+<li>给出原作者的署名（Jelly Black，或者站长的真实姓名）或原博客的链接（BY）；</li>
+<li>不得用于商业目的（NC）。</li>
+</ul>
+<p>以上条件不代表法律条文。详情请参考<a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons官网</a>。</p>
+<h1 id="杂谈"><a href="#杂谈" class="headerlink" title="杂谈"></a>杂谈</h1><h2 id="关于互联网孤岛"><a href="#关于互联网孤岛" class="headerlink" title="关于互联网孤岛"></a>关于互联网孤岛</h2><p>N年以前，各种贴吧和论坛盛行。想要在网上搜索什么内容，只需用搜索引擎即可。然而随着互联网的发展，有人看重了其中的利润，一步一步地把网页用户往手机App上赶（点名百度贴吧），以提高用户忠诚度。因为封闭的生态不容易流失用户，所以很多知乎答主把知乎的流量往他们的微信公众号上引。殊不知，这些封闭的生态是无法被搜索引擎收录的。比如百度上搜不到淘宝商品、微信公众号文章……所以现在我们在国内搜索引擎上搜索，找到有用信息的概率越来越低。我们不得不关注特定的公众号，下载特定的App，才能得到想要的信息。如果这种趋势持续下去，“地球村”将变成一座座孤岛。</p>
+<p>鉴于此，虽然发表博客也可以采用写知乎或发微信公众号文章的形式，但站长选择了搭建网站。此举虽然并不能从宏观上改变互联网成为孤岛的趋势，但至少能让我们铭记，以前曾经存在过一个信息共享的互联网王国。</p>
+<h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><p>要联系我吗？<a href="/about">关于</a>页面有我的社交账号和联系方式。</p>
+]]></content>
+      <categories>
+        <category>博客管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>4 常微分方程</title>
+    <url>//post/2f4440eaf236/</url>
+    <content><![CDATA[<img src="/post/2f4440eaf236/4%20%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/2f4440eaf236/4.1%20%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5.svg" class="">
+
+<img src="/post/2f4440eaf236/4.2%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.svg" class="">
+
+<img src="/post/2f4440eaf236/4.3%20%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.svg" class="">
+
+<img src="/post/2f4440eaf236/4.4%20%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%84.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>微积分H（上）</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5 n阶矩阵的对角化与二次型</title>
+    <url>//post/74893f8ba25e/</url>
+    <content><![CDATA[<img src="/post/74893f8ba25e/5.1%20%E5%90%91%E9%87%8F%E7%9A%84%E5%86%85%E7%A7%AF%E4%B8%8E%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/74893f8ba25e/5.2%20%E7%9F%A9%E9%98%B5%E7%9A%84%E7%89%B9%E5%BE%81%E5%80%BC%E5%92%8C%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F.svg" class="">
+
+<img src="/post/74893f8ba25e/5.3%20%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96.svg" class="">
+
+<img src="/post/74893f8ba25e/5.4%20%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96.svg" class="">
+
+<img src="/post/74893f8ba25e/5.5%20%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E7%9F%A9%E9%98%B5%E8%A1%A8%E7%A4%BA.svg" class="">
+
+<img src="/post/74893f8ba25e/5.6%20%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84%E6%AD%A3%E5%AE%9A%E6%80%A7.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>应用线性代数</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4 线性方程组与向量的秩</title>
+    <url>//post/14f43c9c9e5c/</url>
+    <content><![CDATA[<img src="/post/14f43c9c9e5c/4.1%20%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E6%B6%88%E5%85%83%E6%B3%95%E4%B8%8E%E8%A7%A3%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/14f43c9c9e5c/4.2%20%E5%90%91%E9%87%8F%E7%BB%84%E4%B8%8E%E7%9F%A9%E9%98%B5.svg" class="">
+
+<img src="/post/14f43c9c9e5c/4.3%20%E5%90%91%E9%87%8F%E7%BB%84%E7%9A%84%E7%BA%BF%E6%80%A7%E7%9B%B8%E5%85%B3%E6%80%A7.svg" class="">
+
+<img src="/post/14f43c9c9e5c/4.4%20%E5%90%91%E9%87%8F%E7%BB%84%E7%9A%84%E7%A7%A9.svg" class="">
+
+<img src="/post/14f43c9c9e5c/4.5%20%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>应用线性代数</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3 n阶矩阵的逆与矩阵的秩</title>
+    <url>//post/97884d45f451/</url>
+    <content><![CDATA[<img src="/post/97884d45f451/3.1%20n%E9%98%B6%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/97884d45f451/3.2%20%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2.svg" class="">
+
+<img src="/post/97884d45f451/3.3%20%E5%88%9D%E7%AD%89%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%B1%82n%E9%98%B6%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.svg" class="">
+
+<img src="/post/97884d45f451/3.4%20%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>应用线性代数</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>6,7 数组，指针</title>
+    <url>//post/3dcfc273c9f8/</url>
+    <content><![CDATA[<img src="/post/3dcfc273c9f8/6%20%E6%95%B0%E7%BB%84.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/3dcfc273c9f8/7%20%E6%8C%87%E9%92%88.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>C语言程序设计与实验</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4,5 函数，预处理命令</title>
+    <url>//post/c0277de86181/</url>
+    <content><![CDATA[<img src="/post/c0277de86181/4%20%E5%87%BD%E6%95%B0.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/c0277de86181/5%20%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>C语言程序设计与实验</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3 一元函数积分学及其应用</title>
+    <url>//post/8daa52189ff0/</url>
+    <content><![CDATA[<img src="/post/8daa52189ff0/3%20%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/8daa52189ff0/3.1%20%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%81%E5%AD%98%E5%9C%A8%E6%9D%A1%E4%BB%B6%E4%B8%8E%E6%80%A7%E8%B4%A8.svg" class="">
+
+<img src="/post/8daa52189ff0/3.2%20%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86.svg" class="">
+
+<img src="/post/8daa52189ff0/3.3%20%E4%B8%A4%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E6%B3%95.svg" class="">
+
+<img src="/post/8daa52189ff0/3.4%20%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>微积分H（上）</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2 行列式</title>
+    <url>//post/546e79a9fd7c/</url>
+    <content><![CDATA[<img src="/post/546e79a9fd7c/2.1%20n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E5%AE%9A%E4%B9%89.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/546e79a9fd7c/2.2%20%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%80%A7%E8%B4%A8.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>应用线性代数</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2 一元函数微分学及其应用</title>
+    <url>//post/965a204662a2/</url>
+    <content><![CDATA[<img src="/post/965a204662a2/2%20%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/965a204662a2/2.1%20%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5.svg" class="">
+
+<img src="/post/965a204662a2/2.2%20%E6%B1%82%E5%AF%BC%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B3%95%E5%88%99.svg" class="">
+
+<img src="/post/965a204662a2/2.3%20%E5%BE%AE%E5%88%86.svg" class="">
+
+<img src="/post/965a204662a2/2.4%20%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E7%9A%84%E5%BA%94%E7%94%A8.svg" class="">
+
+<img src="/post/965a204662a2/2.5%20Taylor%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.svg" class="">
+
+<img src="/post/965a204662a2/2.6%20%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%9A%84%E7%A0%94%E7%A9%B6.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>微积分H（上）</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1 矩阵</title>
+    <url>//post/d0bd60b51aa0/</url>
+    <content><![CDATA[<img src="/post/d0bd60b51aa0/1.1%20%E7%9F%A9%E9%98%B5%E7%9A%84%E6%A6%82%E5%BF%B5.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/d0bd60b51aa0/1.2%20%E7%9F%A9%E9%98%B5%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97.svg" class="">
+
+<img src="/post/d0bd60b51aa0/1.3%20%E5%88%86%E5%9D%97%E7%9F%A9%E9%98%B5.svg" class="">
+
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>应用线性代数</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1~3 程序设计基础~程序控制结构</title>
+    <url>//post/84dd2c9495be/</url>
+    <content><![CDATA[<img src="/post/84dd2c9495be/1%20%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/84dd2c9495be/2%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F.svg" class="">
+
+<img src="/post/84dd2c9495be/3%20%E7%A8%8B%E5%BA%8F%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>C语言程序设计与实验</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用Python脚本实现疫情自动填报</title>
+    <url>//post/6d206e1e50a9/</url>
+    <content><![CDATA[<h1 id="项目起源"><a href="#项目起源" class="headerlink" title="项目起源"></a>项目起源</h1><p>两次忘了疫情填报，去辅导员办公室喝了两次茶，立志决定改掉爱忘事的坏习惯，<del>即写一个懒人脚本，彻底忘掉填报这事</del>。以下文章我将侧重于抓包与分析的过程。如你是西工大校友，可直接拿去用：<a href="https://github.com/JellyBlack/NPU-pandemic-auto-fill-in">https://github.com/JellyBlack/NPU-pandemic-auto-fill-in</a></p>
+<p>（<strong>低调使用！不要张扬！</strong>）</p>
+<h1 id="抓包与分析"><a href="#抓包与分析" class="headerlink" title="抓包与分析"></a>抓包与分析</h1><p>首先准备好我们的Fiddler抓包工具。第一次使用，需配置HTTPS证书，否则不能抓用SSL加密的流量。</p>
+<span id="more"></span>
+
+<img src="/post/6d206e1e50a9/Fiddler%E4%B8%BB%E9%A1%B5.png" class="">
+
+<p>为了简便，以下我只保留了*.nwpu.edu.cn的请求。在浏览器访问yqtb.nwpu.edu.cn，然后我们发现Fiddler抓到了如下几个包：</p>
+<img src="/post/6d206e1e50a9/%E6%8A%93%E5%8C%851.png" class="">
+
+<p>注意：当我们第一次请求时，响应报文中设置了<code>JSESSIONID</code>这个Cookie。这个Cookie用于标记会话，因此在Python脚本中需要记录这个Cookie。以下是相应的Python代码片段。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 请求疫情填报页面</span></span><br><span class="line">response1 = session.get(yqtb_url)</span><br><span class="line">yqtb_cookie = session.cookies[<span class="string">&quot;JSESSIONID&quot;</span>] <span class="comment"># 疫情填报的会话id</span></span><br></pre></td></tr></table></figure>
+
+<p>继续分析，一路重定向下去。注意#5这个请求，该请求重定向到了uis.nwpu.edu.cn。</p>
+<img src="/post/6d206e1e50a9/%E9%87%8D%E5%AE%9A%E5%90%91.png" class="">
+
+<p>由于我登录了翱翔门户，所以直接重定向回来了。这次我退出翱翔门户，再次访问，这次浏览器跳转到了登录页面。</p>
+<p>让我们填好表单，尝试登录：</p>
+<img src="/post/6d206e1e50a9/%E7%99%BB%E5%BD%95.png" class="">
+
+<p>哈！成功抓到登录表单。只要简单实现就可以用脚本登录了。但仔细观察，登录时客户端提交了一个Cookie：</p>
+<img src="/post/6d206e1e50a9/Headers.png" class="">
+
+<p>看来我们要保留这个Cookie，以在登录时使用。以下是登录的脚本。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">uis_cookie = response1.cookies[<span class="string">&quot;SESSION&quot;</span>] <span class="comment"># 登录翱翔门户的会话id</span></span><br><span class="line"><span class="comment"># 登录翱翔门户post的数据</span></span><br><span class="line">loginData = &#123;</span><br><span class="line">    <span class="string">&quot;username&quot;</span> : studentId,</span><br><span class="line">    <span class="string">&quot;password&quot;</span> : password,</span><br><span class="line">    <span class="string">&quot;currentMenu&quot;</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="string">&quot;execution&quot;</span> : <span class="string">&quot;e1s1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;_eventId&quot;</span> : <span class="string">&quot;submit&quot;</span>,</span><br><span class="line">    <span class="string">&quot;geolocation&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;submit&quot;</span> : <span class="string">&quot;稍等片刻……&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 登录翱翔门户所用的cookie</span></span><br><span class="line">loginHeader = &#123;</span><br><span class="line">    <span class="string">&quot;Cookie&quot;</span> : <span class="string">&quot;SESSION=&quot;</span> + uis_cookie</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 请求登录</span></span><br><span class="line">response2 = session.post(uis_login_url, data = loginData, headers = loginHeader)</span><br></pre></td></tr></table></figure>
+
+<p>继续观察，登录完成后重定向到了一个URL，并且该URL携带登录口令。看来访问该URL，服务器就会认为我们完成了登录，并允许当前会话的操作。</p>
+<p>回到浏览器，登录完成后到了疫情填报页面。这时我完成填报并提交，抓到了提交的包：</p>
+<img src="/post/6d206e1e50a9/%E6%8A%93%E5%8C%852.png" class="">
+
+<p>把这些表单数据复制到脚本，然后发一个Post请求就完了。以下是代码。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交填报信息post的数据</span></span><br><span class="line">fillinData = &#123;</span><br><span class="line">    <span class="string">&quot;sfczbcqca&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;czbcqcasjd&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfczbcfhyy&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;czbcfhyysjd&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;actionType&quot;</span> : <span class="string">&quot;addRbxx&quot;</span>,</span><br><span class="line">    <span class="string">&quot;userLoginId&quot;</span> : studentId,</span><br><span class="line">    <span class="string">&quot;userName&quot;</span> : name,</span><br><span class="line">    <span class="string">&quot;szcsbm&quot;</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="string">&quot;szcsmc&quot;</span> : <span class="string">&quot;在学校&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfjt&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;sfjtsm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfjcry&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;sfjcrysm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfjcqz&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;sfyzz&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;sfqz&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;ycqksm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;glqk&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;glksrq&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;gljsrq&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;tbly&quot;</span> : <span class="string">&quot;sso&quot;</span>,</span><br><span class="line">    <span class="string">&quot;glyy&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;qtqksm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfjcqzsm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfjkqk&quot;</span> : <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;jkqksm&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sfmtbg&quot;</span> : <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;userType&quot;</span> : <span class="number">2</span>,</span><br><span class="line">    <span class="string">&quot;qrlxzt&quot;</span> : <span class="string">&quot;&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 填报所需要的header</span></span><br><span class="line">fillinHeader = &#123;</span><br><span class="line">    <span class="string">&quot;Host&quot;</span> : <span class="string">&quot;yqtb.nwpu.edu.cn&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Proxy-Connection&quot;</span> : <span class="string">&quot;keep-alive&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Accept&quot;</span> : <span class="string">&quot;application/json, text/javascript, */*; q=0.01&quot;</span>,</span><br><span class="line">    <span class="string">&quot;X-Requested-With&quot;</span> : <span class="string">&quot;XMLHttpRequest&quot;</span>,</span><br><span class="line">    <span class="string">&quot;User-Agent&quot;</span> : <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Content-Type&quot;</span> : <span class="string">&quot;application/x-www-form-urlencoded&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Origin&quot;</span> : yqtb_url,</span><br><span class="line">    <span class="string">&quot;Referer&quot;</span> : yqtb_referer_url,</span><br><span class="line">    <span class="string">&quot;Accept-Encoding&quot;</span> : <span class="string">&quot;gzip, deflate&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Accept-Language&quot;</span> : <span class="string">&quot;zh-CN,zh;q=0.9,en;q=0.8&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Cookie&quot;</span> : <span class="string">&quot;JSESSIONID=&quot;</span> + yqtb_cookie</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 提交填报信息</span></span><br><span class="line">response3 = session.post(yqtb_fillin_url, data = fillinData, headers = fillinHeader)</span><br></pre></td></tr></table></figure>
+
+<p>基本的操作到此结束。但为了让我们的脚本更完善，我们不禁想到：</p>
+<p><strong>如果填报失败了怎么办？</strong></p>
+<p>Internet这事，处处都得有个异常处理。如果填报失败，我们自然要通知用户，让他马上修复脚本。为此，我接入了钉钉的机器人通知API。这样填报情况会自动通过钉钉发送给用户。以下是代码。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发送钉钉通知</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">len</span>(webhook) != <span class="number">0</span>:</span><br><span class="line">    message = <span class="string">&quot;【疫情自动填报】&quot;</span></span><br><span class="line">    <span class="keyword">if</span> flag:</span><br><span class="line">        message += <span class="string">&quot;填报成功&quot;</span></span><br><span class="line">    <span class="keyword">elif</span> filled:</span><br><span class="line">        message += <span class="string">&quot;填报失败\n错误码：&quot;</span> + <span class="built_in">str</span>(state) + <span class="string">&quot;\n错误信息：&quot;</span> + error</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        message += <span class="string">&quot;填报失败&quot;</span></span><br><span class="line">    <span class="keyword">if</span> filled <span class="keyword">and</span> <span class="built_in">len</span>(yqtb_cookie) != <span class="number">0</span>:</span><br><span class="line">        message += <span class="string">&quot;\n会话ID：&quot;</span> + yqtb_cookie</span><br><span class="line">    <span class="comment"># 要发送的数据</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&quot;msgtype&quot;</span> : <span class="string">&quot;text&quot;</span>,</span><br><span class="line">        <span class="string">&quot;text&quot;</span> : &#123;</span><br><span class="line">            <span class="string">&quot;content&quot;</span> : message</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;at&quot;</span> : &#123;</span><br><span class="line">            <span class="string">&quot;isAtAll&quot;</span> : <span class="keyword">not</span> flag</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.post(webhook, data = json.dumps(data), headers = &#123;<span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/json&quot;</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>以下是消息示例。</p>
+<img src="/post/6d206e1e50a9/%E9%92%89%E9%92%89.png" class="">
+
+<p>完成！现在我们只需要写一个yml脚本，放到GitHub，然后就可以每天自动执行了。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">NPW-pandemic-auto-fill-in</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span> [ <span class="string">main</span> ]</span><br><span class="line">  <span class="attr">schedule:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">cron:</span> <span class="string">&#x27;34 1,21 * * *&#x27;</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Python</span> <span class="number">3.9</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">actions/setup-python@v2</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">python-version:</span> <span class="number">3.9</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">dependencies</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        python -m pip install --upgrade pip</span></span><br><span class="line"><span class="string">        pip install requests</span></span><br><span class="line"><span class="string"></span>    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Run</span> <span class="string">task</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">python</span> <span class="string">NPU_pandemic_auto_fill_in.py</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.NAME</span> <span class="string">&#125;&#125;</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.STUDENTID</span> <span class="string">&#125;&#125;</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.PASSWORD</span> <span class="string">&#125;&#125;</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.WEBHOOK</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>以上便是我抓包与分析的大致思路。当然，其中撞过不少墙，比如弄不懂重定向若干次后，Cookie怎么用Python读取；登录不上，一直报错；请求被服务器拦截……</p>
+<p>抓包并不总是一帆风顺的。如果网站自建一套密钥系统，把密码加密；或者表单混乱至极；再或者有一道验证码，那么恐怕脚本就没这么简单了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我以前没学过Python，现学现用，折腾半天，总算把自动填报搞定了。妈妈再也不用担心我的学习~</p>
+<p>查看完整项目代码请前往GitHub仓库：<a href="https://github.com/JellyBlack/NPU-pandemic-auto-fill-in">https://github.com/JellyBlack/NPU-pandemic-auto-fill-in</a></p>
+<p>该项目仅用于学习测试。疫情管理本意是好的，只不过每天填报对于懒人不友好（所以这就是你折腾脚本的原因？）。在此处记录一下抓包分析的思路，便于以后借鉴。如果你要使用，拿去就好了，配置可参考README文档。<strong>低调使用！</strong></p>
+]]></content>
+      <categories>
+        <category>GitHub项目</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>自动化</tag>
+        <tag>抓包</tag>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1 函数、极限、连续</title>
+    <url>//post/f66bcbd4361b/</url>
+    <content><![CDATA[<img src="/post/f66bcbd4361b/1%20%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD.svg" class="">
+
+<span id="more"></span>
+
+<img src="/post/f66bcbd4361b/1.1%20%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0.svg" class="">
+
+<img src="/post/f66bcbd4361b/1.2%20%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90.svg" class="">
+
+<img src="/post/f66bcbd4361b/1.3%20%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90.svg" class="">
+
+<img src="/post/f66bcbd4361b/1.4%20%E6%97%A0%E7%A9%B7%E5%B0%8F%E9%87%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7%E9%87%8F.svg" class="">
+
+<img src="/post/f66bcbd4361b/1.5%20%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0.svg" class="">
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+        <category>微积分H（上）</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+</search>

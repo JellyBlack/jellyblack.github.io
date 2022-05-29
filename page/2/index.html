@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8" />
+    
+    
+    <meta name="keywords" content="博客 blog 笔记 Hexo" />
+    
+    
+    <meta name="description" content="喵~这里是JellyBlack的个人博客，多多关照！" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>
+        
+        Jelly的小窝
+    </title>
+  <meta name="generator" content="hexo-theme-ayer">
+    
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+
+    
+<script src="/js/jquery.pjax.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    
+    
+<link rel="stylesheet" href="/dist/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css" />
+    
+<link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <!-- cnzz统计 -->
+    
+    <script type="text/javascript">
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1280180245'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280180245%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+        document.getElementById("cnzz_stat_icon_1280180245").style.display = "none";
+
+    </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <!-- 看板娘插件 -->
+    <script src="/live2d-widget/autoload.js"></script>
+    <!-- Valine -->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+    <!-- mermaid -->
+    
+    
+<script src="/js/lazyload.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+    <!-- ImageViewer -->
+    
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init () {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+
+</script>
+
+    
+    <!-- ClickLove -->
+    
+    <!-- ClickBoom1 -->
+    
+    <!-- ClickBoom2 -->
+    
+    
+<script src="/js/clickBoom2.js"></script>
+
+    
+    <!-- CodeCopy -->
+    
+    
+<link rel="stylesheet" href="/css/clipboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds);
+    }
+
+    function clipboard(e, t, a) {
+        var initCopyCode = function() {
+            var copyHtml = '';
+            copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+            copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+            copyHtml += '</button>';
+            $(".highlight .code pre").before(copyHtml);
+            $(".article pre code").before(copyHtml);
+            var clipboard = new ClipboardJS('.btn-copy', {
+                target: function(trigger) {
+                    return trigger.nextElementSibling;
+                }
+            });
+            clipboard.on('success', function(e) {
+                let $btn = $(e.trigger);
+                $btn.addClass('copied');
+                let $icon = $($btn.find('i'));
+                $icon.removeClass('ri-file-copy-2-line');
+                $icon.addClass('ri-checkbox-circle-line');
+                let $span = $($btn.find('span'));
+                $span[0].innerText = 'COPIED';
+
+                wait(function() { // 等待两秒钟后恢复
+                    $icon.removeClass('ri-checkbox-circle-line');
+                    $icon.addClass('ri-file-copy-2-line');
+                    $span[0].innerText = 'COPY';
+                }, 2000);
+            });
+            clipboard.on('error', function(e) {
+                e.clearSelection();
+                let $btn = $(e.trigger);
+                $btn.addClass('copy-failed');
+                let $icon = $($btn.find('i'));
+                $icon.removeClass('ri-file-copy-2-line');
+                $icon.addClass('ri-time-line');
+                let $span = $($btn.find('span'));
+                $span[0].innerText = 'COPY FAILED';
+
+                wait(function() { // 等待两秒钟后恢复
+                    $icon.removeClass('ri-time-line');
+                    $icon.addClass('ri-file-copy-2-line');
+                    $span[0].innerText = 'COPY';
+                }, 2000);
+            });
+        }
+        initCopyCode();
+    }
+    $(function() {
+        clipboard(window, document);
+    });
+</script>
+    
+    <!-- CanvasBackground -->
+    
+    
+<script src="/dist/main.js"></script>
+
+    <style>
+        #vcomments-box {
+            padding: 5px 30px;
+        }
+
+        @media screen and (max-width: 800px) {
+            #vcomments-box {
+                padding: 5px 0px;
+            }
+        }
+
+        #vcomments-box #vcomments {
+            background-color: #fff;
+        }
+
+        .v .vlist .vcard .vh {
+            padding-right: 20px;
+        }
+
+        .v .vlist .vcard {
+            padding-left: 10px;
+        }
+
+        .vpower {
+            display: none;
+        }
+
+        .swal2-styled.swal2-confirm {
+            font-size: 1.6rem;
+        }
+
+    </style>
+    <script>
+        // mermaid
+        if (window.mermaid) {
+            mermaid.initialize({
+                theme: "forest"
+            });
+        }
+
+        // 点击内容自动隐藏侧边栏
+        $(function () {
+            $("main").click(function () {
+                if ($(window).width() <= 768) {
+                    $("main, aside").addClass("on");
+                }
+            });
+        });
+
+        // Valine
+        var init_valine = function () {
+            new Valine({
+                el: "#vcomments",
+                app_id: "7x5ntImTabWQ6XJhhQpWG0pg-gzGzoHsz",
+                app_key: "ECaNhEHx84jJzhmwyjcz9gfH",
+                path: window.location.pathname,
+                avatar: "monsterid",
+                placeholder: "给我的文章加点评论吧~",
+                recordIP: true,
+            });
+            const infoEle = document.querySelector("#vcomments .info");
+            if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+                infoEle.childNodes.forEach(function (item) {
+                    item.parentNode.removeChild(item);
+                });
+            }
+            if (localStorage.hide_comments == 1) {
+                $("#vcomments-box").hide();
+            }
+        }
+        $(init_valine);
+
+        // 隐藏元素
+        function apply_settings () {
+            if (localStorage.hide_welcome == 1) {
+                let ele = document.getElementById("post-Welcome");
+                if (ele && window.location.pathname != "/post/fc4592d957ed/") {
+                    ele.setAttribute("style", "display: none;");
+                }
+            }
+            if (sessionStorage.hide_copyright == 1) {
+                let ele = document.getElementsByClassName("declare")[0];
+                if (ele != undefined) {
+                    ele.setAttribute("style", "display: none;");
+                }
+                document.getElementById("footer").setAttribute("style", "display: none;");
+                document.getElementsByClassName("article-footer")[0].setAttribute("style", "display: none;");
+            }
+            if (localStorage.show_btns == 0) {
+                document.getElementsByClassName("float_btns")[0].setAttribute("style", "display: none;");
+            }
+        }
+        $(apply_settings);
+
+        // pjax动态更新
+        var pathname = window.location.pathname;
+        $(document).on('pjax:complete', function () {
+            // 如果页面不一致，则滚动到顶部，并执行main
+            if (window.location.pathname != pathname) {
+                pathname = window.location.pathname;
+                $("main").scrollTop(0);
+            }
+            // 应用JavaScript
+            $(function () {
+                apply_settings();
+                main();
+                init_valine();
+                viewer_init();
+                clipboard(window, document);
+            })
+        })
+        isGitee = /gitee\.io$/.test(window.location.hostname.toLowerCase());
+        timeDelta = Date.now() % 600000; // 当前时间距上个整十分钟的毫秒数
+        $(document).pjax("a:not(#reload)[href^='/']", "main", {
+            fragment: "main"
+        });
+        // 由于Gitee将缓存有效期设得很长，此处执行手动刷新，超时10分钟，与GitHub保持一致
+        // 仅刷新HTML本身，HTML引用的外部资源仍使用浏览器缓存
+        $(function () {
+            if (!isGitee) {
+                return;
+            }
+            var now = Date.now();
+            if (localStorage.gitee_last_updated == undefined || now - localStorage.gitee_last_updated >= 600000) {
+                localStorage.gitee_last_updated = now;
+                $("#reload").attr("href", window.location.href);
+                if (window.location.pathname == '/') {
+                    $(document).pjax("#reload", ".articles", {
+                        fragment: ".articles",
+                        push: false
+                    });
+                } else {
+                    $(document).pjax("#reload", "main", {
+                        fragment: "main",
+                        push: false
+                    });
+                }
+                $("#reload").click();
+            }
+        });
+
+    </script>
+</head>
+
+</html>
+
+</html>
+
+
+<body>
+    <div id="app">
+        
+        
+        <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+        
+        <main class="content on">
+            
+<section class="cover">
+    
+    <div class="cover-frame">
+        <div class="bg-box">
+            <img src="/images/cover.jpg" alt="image frame" />
+        </div>
+        <div class="cover-inner text-center text-white">
+            <h1 id="title">
+                Jelly的小窝
+            </h1>
+            <div id="subtitle-box">
+                
+                <span id="subtitle"></span>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="cover-learn-more">
+        <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+    </div>
+    <div class="grassblock-wrapper">
+        <div class="grassblock">
+            <div class="block-top"></div>
+            <div class="block-bottom"></div>
+            <div class="block-front"></div>
+            <div class="block-back"></div>
+            <div class="block-left"></div>
+            <div class="block-right"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Subtitle -->
+
+
+<div id="main">
+    <section class="outer">
+    
+    
+    
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <span>&ZeroWidthSpace;</span>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    var lang = window.navigator.language;
+    var show_hitokoto = true;
+    if (lang == 'zh-CN' && /github\.io$/.test(window.location.hostname)) {
+        var count;
+        if (localStorage.redirect_broadcast_count) {
+            count = Number(localStorage.redirect_broadcast_count) + 1;
+            localStorage.redirect_broadcast_count = count;
+        } else {
+            count = 1;
+            localStorage.redirect_broadcast_count = 1;
+        }
+        if (count < 2) {
+            show_hitokoto = false;
+            document.getElementById("broad").innerHTML = `加载太慢？试试访问<a href="https://jellyblack.gitee.io" target=_self><b>Gitee镜像站</b></a>吧！（下次自动隐藏）`;
+        }
+    }
+    if (show_hitokoto) {
+        fetch('https://v1.hitokoto.cn')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("broad").innerHTML = data.hitokoto;
+            })
+            .catch(console.error)
+    }
+
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+
+</style>
+
+    
+    <article class="articles">
+        
+        
+        
+        
+        <article id="post-1-矩阵" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <div class="article-inner">
+        
+        <header class="article-header">
+            
+
+<h2 itemprop="name">
+    <a class="article-title" href="/post/d0bd60b51aa0/">
+        1 矩阵
+        
+
+    </a>
+</h2>
+
+
+
+            
+
+        </header>
+        
+        
+        <div class="article-meta">
+            <a href="/post/d0bd60b51aa0/" class="article-date">
+    <time datetime="2021-10-13T04:55:56.000Z" itemprop="datePublished">2021-10-13</time>
+</a>
+
+            
+<div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/%E5%BA%94%E7%94%A8%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">应用线性代数</a>
+</div>
+
+
+            
+            
+
+            
+        </div>
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+            <img src="/post/d0bd60b51aa0/1.1%20%E7%9F%A9%E9%98%B5%E7%9A%84%E6%A6%82%E5%BF%B5.svg" class="">
+            
+            <a class="article-more-link" href="/post/d0bd60b51aa0/">
+                阅读更多…
+            </a>
+            
+            
+            <!-- reward -->
+            
+        </div>
+        
+
+        <!-- copyright -->
+        
+        <footer class="article-footer">
+            
+            
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" rel="tag">思维导图</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+
+        </footer>
+    </div>
+
+    
+    
+    
+
+    
+    
+    
+    
+</article>
+
+        
+        <article id="post-1-3-程序设计基础-程序控制结构" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <div class="article-inner">
+        
+        <header class="article-header">
+            
+
+<h2 itemprop="name">
+    <a class="article-title" href="/post/84dd2c9495be/">
+        1~3 程序设计基础~程序控制结构
+        
+
+    </a>
+</h2>
+
+
+
+            
+
+        </header>
+        
+        
+        <div class="article-meta">
+            <a href="/post/84dd2c9495be/" class="article-date">
+    <time datetime="2021-10-12T01:58:44.000Z" itemprop="datePublished">2021-10-12</time>
+</a>
+
+            
+<div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/C%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E9%AA%8C/">C语言程序设计与实验</a>
+</div>
+
+
+            
+            
+
+            
+        </div>
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+            <img src="/post/84dd2c9495be/1%20%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80.svg" class="">
+            
+            <a class="article-more-link" href="/post/84dd2c9495be/">
+                阅读更多…
+            </a>
+            
+            
+            <!-- reward -->
+            
+        </div>
+        
+
+        <!-- copyright -->
+        
+        <footer class="article-footer">
+            
+            
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" rel="tag">思维导图</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+
+        </footer>
+    </div>
+
+    
+    
+    
+
+    
+    
+    
+    
+</article>
+
+        
+        <article id="post-用Python脚本实现疫情自动填报" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <div class="article-inner">
+        
+        <header class="article-header">
+            
+
+<h2 itemprop="name">
+    <a class="article-title" href="/post/6d206e1e50a9/">
+        用Python脚本实现疫情自动填报
+        
+
+    </a>
+</h2>
+
+
+
+            
+
+        </header>
+        
+        
+        <div class="article-meta">
+            <a href="/post/6d206e1e50a9/" class="article-date">
+    <time datetime="2021-10-11T15:42:37.000Z" itemprop="datePublished">2021-10-11</time>
+</a>
+
+            
+<div class="article-category">
+    <a class="article-category-link" href="/categories/GitHub%E9%A1%B9%E7%9B%AE/">GitHub项目</a> / <a class="article-category-link" href="/categories/GitHub%E9%A1%B9%E7%9B%AE/Python/">Python</a>
+</div>
+
+
+            
+            
+
+            
+        </div>
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+            <h1 id="项目起源"><a href="#项目起源" class="headerlink" title="项目起源"></a>项目起源</h1><p>两次忘了疫情填报，去辅导员办公室喝了两次茶，立志决定改掉爱忘事的坏习惯，<del>即写一个懒人脚本，彻底忘掉填报这事</del>。以下文章我将侧重于抓包与分析的过程。如你是西工大校友，可直接拿去用：<a target="_blank" rel="noopener" href="https://github.com/JellyBlack/NPU-pandemic-auto-fill-in">https://github.com/JellyBlack/NPU-pandemic-auto-fill-in</a></p>
+<p>（<strong>低调使用！不要张扬！</strong>）</p>
+<h1 id="抓包与分析"><a href="#抓包与分析" class="headerlink" title="抓包与分析"></a>抓包与分析</h1><p>首先准备好我们的Fiddler抓包工具。第一次使用，需配置HTTPS证书，否则不能抓用SSL加密的流量。</p>
+            
+            <a class="article-more-link" href="/post/6d206e1e50a9/">
+                阅读更多…
+            </a>
+            
+            
+            <!-- reward -->
+            
+        </div>
+        
+
+        <!-- copyright -->
+        
+        <footer class="article-footer">
+            
+            
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web%E5%89%8D%E7%AB%AF/" rel="tag">Web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%93%E5%8C%85/" rel="tag">抓包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="tag">自动化</a></li></ul>
+
+
+        </footer>
+    </div>
+
+    
+    
+    
+
+    
+    
+    
+    
+</article>
+
+        
+        <article id="post-1-函数、极限、连续" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <div class="article-inner">
+        
+        <header class="article-header">
+            
+
+<h2 itemprop="name">
+    <a class="article-title" href="/post/f66bcbd4361b/">
+        1 函数、极限、连续
+        
+
+    </a>
+</h2>
+
+
+
+            
+
+        </header>
+        
+        
+        <div class="article-meta">
+            <a href="/post/f66bcbd4361b/" class="article-date">
+    <time datetime="2021-10-10T12:44:51.000Z" itemprop="datePublished">2021-10-10</time>
+</a>
+
+            
+<div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/%E5%BE%AE%E7%A7%AF%E5%88%86H%EF%BC%88%E4%B8%8A%EF%BC%89/">微积分H（上）</a>
+</div>
+
+
+            
+            
+
+            
+        </div>
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+            <img src="/post/f66bcbd4361b/1%20%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD.svg" class="">
+            
+            <a class="article-more-link" href="/post/f66bcbd4361b/">
+                阅读更多…
+            </a>
+            
+            
+            <!-- reward -->
+            
+        </div>
+        
+
+        <!-- copyright -->
+        
+        <footer class="article-footer">
+            
+            
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" rel="tag">思维导图</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+
+        </footer>
+    </div>
+
+    
+    
+    
+
+    
+    
+    
+    
+</article>
+
+        
+    </article>
+    
+
+    
+    <nav class="page-nav">
+        
+        <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+    
+</section>
+
+</div>
+
+            <footer id="footer" class="footer">
+    <div class="outer">
+        <ul>
+            <li id="copyright">
+                Copyright &copy;
+                
+                2021-
+                
+                2022
+                <i class="ri-heart-fill heart_icon"></i>
+                Jelly Black
+            </li>
+        </ul>
+    </div>
+</footer>
+
+        </main>
+        <a id="reload" style="display: none;"></a>
+        <div class="float_btns">
+            <div class="totop" id="totop">
+    <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+    <i class="ri-moon-line"></i>
+</div>
+
+
+        </div>
+        <aside class="sidebar on">
+            <button class="navbar-toggle"></button>
+<nav class="navbar">
+    
+    <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="Jelly的小窝"></a>
+    </div>
+    
+    <ul class="nav nav-main">
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/">
+                主页
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/archives/">
+                时间轴
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/categories/">
+                分类
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/tags/">
+                标签
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/indexes/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">
+                课程笔记
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/categories/%E5%BD%B1%E9%9B%86/">
+                影集
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-item-link" href="/about/">
+                关于
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+    <ul class="nav">
+        <li class="nav-item">
+            
+            <a class="nav-item-link nav-item-search" title="搜索">
+                <i class="ri-search-line"></i>
+            </a>
+            
+            
+        </li>
+    </ul>
+</nav>
+<div class="search-form-wrap">
+    <div class="local-search local-search-plugin">
+    <input type="search" id="local-search-input" class="local-search-input" placeholder="告诉爱酱你要搜索的内容吧">
+    <div id="local-search-result" class="local-search-result"></div>
+</div>
+
+</div>
+
+        </aside>
+        <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+    <span class="close"><i class="ri-close-line"></i></span>
+    <p class="reward-p"><i class="ri-cup-line"></i>
+        请我喝杯咖啡吧~
+    </p>
+    <div class="reward-box">
+        
+        
+    </div>
+</div>
+
+        <!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init () {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+
+</script>
+
+
+
+        
+        
+
+        <div class="chrome-hint">
+    <img src="/images/chrome.svg" alt="" class="chrome-icon">
+    <div class="hint">
+        <span>建议用外部浏览器打开，获得最佳体验！</span>
+        <div class="check">
+            <input type="checkbox" id="no-hint" checked>
+            <label for="no-hint">不再提示</label>
+        </div>
+    </div>
+    <a href="javascript:chrome_close()" class="close">
+        <img src="/images/close.svg" alt="" class="close">
+    </a>
+</div>
+<script>
+    let url = navigator.userAgent.toLowerCase();
+    if (!(url.indexOf("qq") > -1 || url.indexOf("micromessenger") > -1)) {
+        // 非QQ和微信内置浏览器
+        $(".chrome-hint").hide();
+    } else {
+        if (localStorage.no_chrome_hint == 1 || sessionStorage.no_chrome_hint == 1) {
+            // 已经不再提示
+            $(".chrome-hint").hide();
+        } else {
+            sessionStorage.no_chrome_hint = 1;
+        }
+    }
+
+    function chrome_close () {
+        if ($("#no-hint").is(":checked")) {
+            localStorage.no_chrome_hint = 1;
+        }
+        $(".chrome-hint").css({
+            "transition": "1s ease-in",
+            "bottom": "-120px"
+        });
+    }
+
+    setTimeout(function () {
+        $(".chrome-hint").css({
+            "transition": "1s ease-in",
+            "bottom": "-120px"
+        });
+    }, 11000);
+
+</script>
+
+    </div>
+</body>
+
+</html>
